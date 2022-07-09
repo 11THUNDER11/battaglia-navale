@@ -11,5 +11,7 @@ export class User{
     //TO DO : aggiungere i metodo getter e la funzionalità per inviare messaggi
     //sendMsg()
 
+    
+
 
 }

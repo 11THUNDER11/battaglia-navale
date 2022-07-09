@@ -1,24 +1,14 @@
 import { User } from "./User";
 
-export class Message{
+export abstract class Message{
     sender : User;
     time : Date;
-    content : string; //TODO , il contenuto del messaggio varia in base alla sua tipologia ES : testo,immagine,audio.
-
-    //TODO , pensare se è il caso di aggiungere la proprità isReaded , se il messaggio è stato letto o meno dall'utente
+    checked : boolean;
      
-
-
-
-    constructor(sender:User,content:string){
+    constructor(sender:User){
         this.sender = sender;
-        this.content = content;
         this.time = new Date();
+        this.checked = false;
     }
 
-    getTime() : Date {
-        return this.time;
-    }
 }
-
-console.log("ok");
